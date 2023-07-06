@@ -44,11 +44,12 @@ Este json se debera importar en postman para poder probar los siguientes endpoin
 http://localhost:8088/clientes
 ```
 Este endpoints tiene expuesto 4 tipos de servicios 
-* CREATE de tipo POST: Con este endpoint se crea un Cliente puede ser de sexo "MASCULINO"," "FEMENINO" O "NO_ESPECIFICA" el ClienteId se genera Automatico, Acontinuacion ejemplo de JSON.
+#### CREATE de tipo POST: 
+Con este endpoint se crea un Cliente puede ser de sexo (MASCULINO,FEMENINO O NO_ESPECIFICA) el ClienteId se genera Automatico, Acontinuacion ejemplo de JSON.
 ```
 POST http://localhost:8088/clientes
 ```
-Este es el json para un cliente de genero MASCULINO
+Este es el json para un cliente de género MASCULINO
 ```
 {
   "nombre": "Alberto lema",
@@ -61,7 +62,7 @@ Este es el json para un cliente de genero MASCULINO
   "estado":true
 }
 ```
-Este es el json para un cliente de genero FEMENINO
+Este es el json para un cliente de género FEMENINO
 ```
 {
   "nombre": "Angy Tatiana Castaño Urrego",
@@ -74,7 +75,7 @@ Este es el json para un cliente de genero FEMENINO
   "estado":true
 }
 ```
-Este es el json para un cliente de genero NO_ESPECIFICA
+Este es el json para un cliente de género NO_ESPECIFICA
 ```
 {
   "nombre": "Alberto lema",
@@ -87,7 +88,8 @@ Este es el json para un cliente de genero NO_ESPECIFICA
   "estado":true
 }
 ```
-* UPDATE de tipo PUT: Con este endpoint se actualiza el Cliente, acontinuacion ejemplo del JSON.
+#### UPDATE de tipo PUT: 
+Con este endpoint se actualiza el Cliente, acontinuación ejemplo del JSON.
 ```
 PUT http://localhost:8088/clientes
 {
@@ -102,16 +104,19 @@ PUT http://localhost:8088/clientes
   "estado":true
 }
 ```
-* FIND ALL de tipo GET: Con este endpoint se consulta todos los clientes creados en la base de dados.
+#### FIND ALL de tipo GET: 
+Con este endpoint se consulta todos los clientes creados en la base de dados.
 ```
 GET http://localhost:8088/clientes
 ```
-* FIND BY CLIENT ID de tipo GET: con este endpoint se consulta un cliente concatenandole el clienteId.
+#### FIND BY CLIENT ID de tipo GET: 
+Con este endpoint se consulta un cliente concatenandole el clienteId.
 ```
 GET http://localhost:8088/clientes/{clienteId}
 ```
 Este resultado
-* UPDATE PARTIAL de tipo PATCH: con este endpoint se actualiza parcialmente algunos campos de clientes, se debe setear el clienteId en la url
+#### UPDATE PARTIAL de tipo PATCH: 
+Con este endpoint se actualiza parcialmente algunos campos de clientes, se debe setear el clienteId en la url
  ```
 PATCH http://localhost:8088/clientes/{clienteId}
 {
@@ -121,7 +126,8 @@ PATCH http://localhost:8088/clientes/{clienteId}
   "estado":true
   }
 ```
-* DELETE de tipo Delete: Con este endpoint se elimina un cliente de la base de datos se le debara pasar el id para eliminarlo.
+#### DELETE de tipo Delete: 
+Con este endpoint se elimina un cliente de la base de datos se le debara pasar el id para eliminarlo.
  ```
 DELETE http://localhost:8088/clientes/{clienteId}
 ```
@@ -131,7 +137,8 @@ DELETE http://localhost:8088/clientes/{clienteId}
 http://localhost:8088/cuentas
 ```
 Este endpoints tiene expuesto 4 tipos de servicios
-* CREATE de tipo POST: Con este endpoint se crea una cuenta esta puede ser de tipo "AHORROS" o "CORRIENTE" el ID se genera Automatico, Acontinuacion ejemplo de JSON.
+#### CREATE de tipo POST: 
+Con este endpoint se crea una cuenta esta puede ser de tipo "AHORROS" o "CORRIENTE" el ID se genera Automatico, Acontinuacion ejemplo de JSON.
 ```
 POST http://localhost:8088/cuentas
 ```
@@ -159,7 +166,8 @@ Este es el json para una cuenta de tipo Corriente.
   }
 }
 ```
-* UPDATE de tipo PUT: Con este endpoint se actualiza la Cuenta, acontinuacion ejemplo del JSON.
+#### UPDATE de tipo PUT: 
+Con este endpoint se actualiza la Cuenta, acontinuacion ejemplo del JSON.
 ```
 PUT http://localhost:8088/cuentas
 {
@@ -177,7 +185,8 @@ PUT http://localhost:8088/cuentas
 ```
 GET http://localhost:8088/cuentas
 ```
-* FIND BY ID de tipo GET: con este endpoint se consulta una cuenta  concatenandole el id.
+#### FIND BY ID de tipo GET:
+Con este endpoint se consulta una cuenta  concatenandole el id.
 ```
 GET http://localhost:8088/cuentas/{id}
 ```
@@ -202,7 +211,8 @@ Este es el resultado que devuelve
     }
 }
 ```
-* UPDATE PARTIAL de tipo PATCH: con este endpoint se actualiza parcialmente algunos campos de cuenta, se debe setear el id en la url
+#### UPDATE PARTIAL de tipo PATCH: 
+Con este endpoint se actualiza parcialmente algunos campos de cuenta, se debe setear el id en la url
  ```
 PATCH http://localhost:8088/cuentas/{id}
 {
@@ -222,7 +232,8 @@ DELETE http://localhost:8088/cuentas/{id}
 http://localhost:8088/movimientos
 ```
 Este endpoints tiene expuesto 3 tipos de servicios
-* CREATE de tipo POST: Con este endpoint se crea un movimienot esta puede ser de tipo "CREDITO" o "DEBITO" el ID se genera Automatico, Acontinuacion ejemplo de JSON.
+#### CREATE de tipo POST: 
+Con este endpoint se crea un movimienot esta puede ser de tipo "CREDITO" o "DEBITO" el ID se genera Automatico, Acontinuacion ejemplo de JSON.
 ```
 POST http://localhost:8088/movimientos
 ```
@@ -246,7 +257,8 @@ Este es el json para un movimiento de tipo DEBITO.
   }
 }
 ```
-* UPDATE de tipo PUT: Con este endpoint se actualiza un movimiento, acontinuacion ejemplo del JSON.
+#### UPDATE de tipo PUT: 
+Con este endpoint se actualiza un movimiento, acontinuacion ejemplo del JSON.
 ```
 PUT http://localhost:8088/movimientos
 {
@@ -258,11 +270,13 @@ PUT http://localhost:8088/movimientos
   }
 }
 ```
-* FIND ALL de tipo GET: Con este endpoint se consulta todos las movimeintos creados en la base de dados.
+#### FIND ALL de tipo GET: 
+Con este endpoint se consulta todos las movimeintos creados en la base de dados.
 ```
 GET http://localhost:8088/movimientos
 ```
-* FIND BY ID de tipo GET: con este endpoint se consulta un movimiento en especifico  concatenandole el id.
+#### FIND BY ID de tipo GET: c
+Con este endpoint se consulta un movimiento en especifico  concatenandole el id.
 ```
 GET http://localhost:8088/movimientos/{id}
 ```
@@ -294,7 +308,8 @@ Este es el resultado que devuelve
     }
 }
 ```
-* DELETE de tipo Delete: Con este endpoint se elimina un Movimiento de la base de datos se le debara pasar el id para eliminarlo.
+#### DELETE de tipo Delete: 
+Con este endpoint se elimina un Movimiento de la base de datos se le debara pasar el id para eliminarlo.
  ```
 DELETE http://localhost:8088/movimientos/{id}
 ```
@@ -304,7 +319,8 @@ DELETE http://localhost:8088/movimientos/{id}
 http://localhost:8088/reportes
 ```
 Este endpoints tiene expuesto 1 servicio de tipo get que es para generar un reporte de los movimientos de un cliente en un rango de fechas en especifico.
-* FIND BY CLIENTE BY ID de tipo GET: con este endpoint se genera un reporte general de todos los movimientos de un cliente, este necesitaun clienteId una fecha de inicio y una fecha final.
+#### FIND BY CLIENTE BY ID de tipo GET: 
+Con este endpoint se genera un reporte general de todos los movimientos de un cliente, este necesitaun clienteId una fecha de inicio y una fecha final.
 ```
 GET http://localhost:8088/reportes?clienteId=1&fechaInicio=2023-07-06&fechaFinal=2023-07-06
 ```
