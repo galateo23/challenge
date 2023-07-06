@@ -8,35 +8,35 @@
 * Lombok
 * Mysql 8.0.28
 
-## Configuracion inicial del proyecto
+## Configuración inicial del proyecto
 ## 1. Configurar Base de datos en entorno docker.
 En la raiz del proyecto se encuentra un archivo docker-compose.yml que levanta una base de datos en mysql en el puerto 3306.
 
 ```
  ./docker-compose.yml
 ```
-estando en la raiz del proyecto se procedera a abrir terminal y ejecutar el comando
+Estando en la raiz del proyecto se procedera a abrir terminal y ejecutar el comando
 
 ```
 docker compose up
 ```
-si solicita algun permiso se le debera anteponer la palabra sudo para darle permisos de administrador
+si solicita algun permiso se le debera anteponer la palabra sudo para darle permisos de administrador.
 ```
 sudo docker compose up
 ```
 Esperar a que termine de levantar el ambiente docker
 ## 2. Ejecutar proyecto.
-Despues de debera ejecutar el proyecto esta api esta corriendo en el puerto 8088
+Despues de debera ejecutar el proyecto esta api esta corriendo en el puerto 8088.
 ## 3. Api disponible
 
 * Data Rest: http://localhost:8088
 
 ## 4. Postman
-En la raiz del proyecto se encuentra el archivo
+En la raiz del proyecto se encuentra el archivo.
 ```
 ./Devsu.postman_collection.json
 ```
-Este json se debera importar en postman para poder probar los siguientes endpoints
+Este json se debera importar en postman para poder probar los siguientes endpoints.
 
 ## 5. Endpoints
 ### CLIENTES
